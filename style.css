@@ -4,8 +4,94 @@ body {
     background-color: #f0f0f0; /* El color del fondo de la página web */
     color: #333333; /* El color del texto*/ 
 }
-h1 {
-    color: #00a800; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+h1 :hover{
+    color: #333333; /* El color de la cabecera */
+    font-size: 35px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    margin: 10px
 }
+h2 {color: #333333; /* El color de la cabecera */
+    font-size: 35px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    .prueba
+}
+
+@keyframes resize-text {
+    0% {
+        font-size: 20px;
+    }
+    50% {
+        font-size: 40px;
+    }
+    100% {
+        font-size: 20px;
+    }
+}
+
+h2 {
+    animation: resize-text 11s infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    animation: slide 2s infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+p {
+    animation: rotate 4s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+h1 {
+    animation: fade 3s infinite;
+}
+
+@keyframes color-change {
+    0% {
+      color:blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+h1 {
+    animtion: color-change 3s infinite;
+ }
